@@ -24,12 +24,8 @@ public class Monster extends Character {
     }
 
     //Describes the characteristics and stats	
-    public void about() {
-	    System.out.println("Rawr. Stats:");
-	    System.out.println("HP: " + _hitPts);
-	    System.out.println("Strength: " + _strength);
-	    System.out.println("Defense: " + _defense);
-	    System.out.println("Attack: " + _attack);
+    public String about() {
+	    return "Rawr. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
 	
 }//end class Monster
