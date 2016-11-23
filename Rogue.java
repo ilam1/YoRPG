@@ -24,11 +24,7 @@ public class Rogue extends Character {
 
     //Describes the characteristics and stats	
     public void about() {
-	    System.out.println("Rogue's are stealthy. Stats:");
-	    System.out.println("HP: " + _hitPts);
-	    System.out.println("Strength: " + _strength);
-	    System.out.println("Defense: " + _defense);
-	    System.out.println("Attack: " + _attack);
+	    return "Rogues are stealthy. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
 	
     //Rogue's special attack
