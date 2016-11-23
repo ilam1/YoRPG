@@ -53,8 +53,8 @@ public class Warrior extends Character {
 //      System.out.println(_attack);
 //      System.out.println(_defense);
 
-	_attack *= .75;
-	_defense += 20;
+	_attack *= 1.25;
+	_defense *= 0.80;
     }
 
     //revert to normal mode
