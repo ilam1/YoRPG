@@ -60,15 +60,10 @@ public abstract class Character {
 	return damage;
     }//end attack
 
-  public abstract void specialize() {
-  _attack = .75;
-  _defense = 20;
-    }
+  public abstract void specialize();
 
-    //revert to normal mode
-    public abstract void normalize() {
-  _attack = .4;
-  _defense = 40;
+	//revert to normal mode
+    public abstract void normalize();
     }
     /*=============================================
       void lowerHP(int) -- lowers life by input value
@@ -84,8 +79,8 @@ public abstract class Character {
       pre:  N/A
       post: String describing the aforementioned character.
       =============================================*/
-    public abstract String about(){
-	return "Stats of " + _name + "/nHP: " + _hitPts + "/nStrength: " + _strength + "/nDefense" + _defense + "/nAttack Rating: " + _attack;
+    public abstract String about();
+	    //+ _name + "/nHP: " + _hitPts + "/nStrength: " + _strength + "/nDefense" + _defense + "/nAttack Rating: " + _attack;
 	//return "Warrior is strong\nMonster is scary\nMage is magical\nRogue is sneaky\nPaladin is holy\nRanger is fast\n";
     }
 
