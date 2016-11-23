@@ -2,7 +2,7 @@
   class Character -- superclass for combatants in Ye Olde RPG
   =============================================*/
 
-public abstract class Character {
+public class Character {
 
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
     protected int _hitPts;
@@ -60,13 +60,13 @@ public abstract class Character {
 	return damage;
     }//end attack
 
-  public abstract void specialize() {
+  public void specialize() {
   _attack = .75;
   _defense = 20;
     }
 
     //revert to normal mode
-    public abstract void normalize() {
+    public void normalize() {
   _attack = .4;
   _defense = 40;
     }
@@ -84,7 +84,7 @@ public abstract class Character {
       pre:  N/A
       post: String describing the aforementioned character.
       =============================================*/
-    public abstract String about(){
+    public String about(){
 	return "Stats of " + _name + "/nHP: " + _hitPts + "/nStrength: " + _strength + "/nDefense" + _defense + "/nAttack Rating: " + _attack;
 	//return "Warrior is strong\nMonster is scary\nMage is magical\nRogue is sneaky\nPaladin is holy\nRanger is fast\n";
     }
