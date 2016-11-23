@@ -25,11 +25,7 @@ public class Paladin extends Character {
 	
     //Describes the characteristics and stats	
     public void about() {
-	    System.out.println("Paladins defend. Stats:");
-	    System.out.println("HP: " + _hitPts);
-	    System.out.println("Strength: " + _strength);
-	    System.out.println("Defense: " + _defense);
-	    System.out.println("Attack: " + _attack);
+	    return "Paladins defend. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
 	
     //Paladin's special attack (or defense rather...)
