@@ -25,7 +25,7 @@ public class Paladin extends Character {
 	
     //Describes the characteristics and stats	
     public void about() {
-	    System.out.println("Mages use magic. Stats:");
+	    System.out.println("Paladins defend. Stats:");
 	    System.out.println("HP: " + _hitPts);
 	    System.out.println("Strength: " + _strength);
 	    System.out.println("Defense: " + _defense);
