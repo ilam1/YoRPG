@@ -45,11 +45,7 @@ public class Warrior extends Character {
 
     //Describes the characteristics and stats	
     public void about() {
-	    System.out.println("Warriors mitigate damage. Stats:");
-	    System.out.println("HP: " + _hitPts);
-	    System.out.println("Strength: " + _strength);
-	    System.out.println("Defense: " + _defense);
-	    System.out.println("Attack: " + _attack);
+	    return "Warriors mitigate damage. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
 	
     //prepare a Warrior for a special attack
