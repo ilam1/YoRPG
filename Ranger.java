@@ -24,11 +24,7 @@ public class Ranger extends Character {
 
     //Describes the characteristics and stats	
     public void about() {
-	    System.out.println("Rangers attack from afar. Stats:");
-	    System.out.println("HP: " + _hitPts);
-	    System.out.println("Strength: " + _strength);
-	    System.out.println("Defense: " + _defense);
-	    System.out.println("Attack: " + _attack);
+	    return "Rangers attack from afar. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
 	
     //Ranger's special attack
