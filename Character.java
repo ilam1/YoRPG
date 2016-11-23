@@ -82,6 +82,6 @@ public abstract class Character {
     public abstract String about();
 	    //+ _name + "/nHP: " + _hitPts + "/nStrength: " + _strength + "/nDefense" + _defense + "/nAttack Rating: " + _attack;
 	//return "Warrior is strong\nMonster is scary\nMage is magical\nRogue is sneaky\nPaladin is holy\nRanger is fast\n";
-    }
+    
 
 }//end class Character
