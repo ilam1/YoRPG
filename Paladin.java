@@ -22,7 +22,16 @@ public class Paladin extends Character {
 	this();
 	_name = name;
     }
-
+	
+    //Describes the characteristics and stats	
+    public void about() {
+	    System.out.println("Mages use magic. Stats:");
+	    System.out.println("HP: " + _hitPts);
+	    System.out.println("Strength: " + _strength);
+	    System.out.println("Defense: " + _defense);
+	    System.out.println("Attack: " + _attack);
+    }
+	
     //Paladin's special attack (or defense rather...)
     public void specialize() {
 	_attack = 0.65;
