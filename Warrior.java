@@ -44,17 +44,17 @@ public class Warrior extends Character {
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     //Describes the characteristics and stats	
-    public void about() {
+    public String about() {
 	    return "Warriors mitigate damage. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
 	
     //prepare a Warrior for a special attack
     public void specialize() {
-      System.out.println(_attack);
-      System.out.println(_defense);
+//      System.out.println(_attack);
+//      System.out.println(_defense);
 
-	_attack = .75;
-	_defense = 20;
+	_attack *= .75;
+	_defense += 20;
     }
 
     //revert to normal mode

@@ -23,7 +23,7 @@ public class Rogue extends Character {
     }
 
     //Describes the characteristics and stats	
-    public void about() {
+    public String about() {
 	    return "Rogues are stealthy. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
 	

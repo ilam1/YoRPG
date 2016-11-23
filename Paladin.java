@@ -24,14 +24,14 @@ public class Paladin extends Character {
     }
 	
     //Describes the characteristics and stats	
-    public void about() {
+    public String about() {
 	    return "Paladins defend. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
 	
     //Paladin's special attack (or defense rather...)
     public void specialize() {
-	_attack = 0.65;
-	_defense = 25;
+	//_attack *= 0.65;
+	_defense *= 1.25;
     }
 
     //revert to normal mode

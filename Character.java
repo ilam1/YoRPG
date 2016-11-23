@@ -64,7 +64,7 @@ public abstract class Character {
 
 	//revert to normal mode
     public abstract void normalize();
-    }
+
     /*=============================================
       void lowerHP(int) -- lowers life by input value
       pre:  Input >= 0

@@ -27,6 +27,10 @@ public class Monster extends Character {
     public String about() {
 	    return "Rawr. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
+    public void normalize() {
+	}
+    public void specialize() {
+	}
 	
 }//end class Monster
 
