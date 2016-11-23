@@ -24,7 +24,7 @@ public class Mage extends Character {
     }
     
     //Describes the characteristics and stats	
-    public void about() {
+    public String about() {
 	    return "Mages use magic. Stats:\nHP: " + _hitPts+"\nStrength: " + _strength+"\nDefense: " + _defense+"\nAttack: " + _attack;
     }
     //Mage's special attack
