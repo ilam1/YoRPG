@@ -1,4 +1,4 @@
 # YoRPG
 Team JIM
 
-Jeffrey Weng, Irene Liam, Mark Shafran 
+Jeffrey Weng, Irene Lam, Mark Shafran 
