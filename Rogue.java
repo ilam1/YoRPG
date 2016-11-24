@@ -11,7 +11,7 @@ public class Rogue extends Character {
 	_hitPts = 100;
 	_strength = 90;
 	_defense = 20;
-	_attack = 1.5;
+	_attack = 1.25;
     }
     
     /*Overloaded constructor
@@ -29,8 +29,8 @@ public class Rogue extends Character {
 	
     //Rogue's special attack
     public void specialize() {
-	_attack = 1.85;
-	_defense = 10;
+	_attack *= 1.1;
+	_defense *= 0.9 ;
     }
 
     //revert to normal mode
