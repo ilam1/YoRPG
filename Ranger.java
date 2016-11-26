@@ -29,13 +29,13 @@ public class Ranger extends Character {
 	
     //Ranger's special attack
     public void specialize() {
-	_attack = .75;
-	_defense = 15;
+	_attack *= 1.15;
+	_defense *= 1.15;
     }
 
     //revert to normal mode
     public void normalize() {
-	_attack = .4;
+	_attack = 0.4;
 	_defense = 30;
     }
 }
