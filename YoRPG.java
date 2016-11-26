@@ -103,7 +103,7 @@ public class YoRPG
 	    }
 	    catch(IOException e){ }
 
-	    System.out.println(charClass);
+	    //System.out.println(charClass);
 	    if (charClass == 1){
 		pat = new Warrior( name );
 	    }
@@ -120,7 +120,9 @@ public class YoRPG
 		pat = new Ranger(name);
 	    }
 	    else{
-		pat = new Warrior(name);
+		System.out.println("Invalid input\n");
+		continue;
+		
 	    }
 
 	    System.out.println("\n==========================================");
