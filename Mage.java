@@ -31,13 +31,13 @@ public class Mage extends Character {
     public void specialize() {
 	//    	System.out.println(_attack);
 	//    	System.out.println(_defense);
-	_attack = 1.35;
-	_defense = 15;
+	_strength *= 1.25;
+	
     }
 
     //revert to normal mode
     public void normalize() {
-	_attack = 1;
+	_strength = 80;
 	_defense = 30;
     }
 }
