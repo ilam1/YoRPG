@@ -36,7 +36,6 @@ public class Paladin extends Character {
 
     //revert to normal mode
     public void normalize() {
-	_attack = .3;
 	_defense = 50;
     }
 }
