@@ -145,18 +145,26 @@ public class YoRPG
       post: Returns true if player wins (monster dies).
       Returns false if monster wins (player dies).
       =============================================*/
+    int rounds = 0;
     public boolean playTurn() {
 
 	int i = 1;
 	int d1, d2;
+	rounds++;
 
 	if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
 	else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
+	    boolean bossy = false;
 	    smaug = new Monster();
-
+	    if (rounds%6 == 5) {
+		bossy = true;
+		System.out.println("DUN DUN DUUUN\n (Boss approaches)");
+		smaug = new Boss();
+	    }
+		
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
 		// Give user the option of using a special attack:
@@ -196,7 +204,13 @@ public class YoRPG
 	    }
 	    //option 2: you slay the beast
 	    else if ( !smaug.isAlive() ) {
-		System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
+		if(bossy) {
+		    System.out.println("You have conquered the boss");
+		    return false;
+		}
+		else {
+		    System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
+		}
 		return true;
 	    }
 	    //option 3: the beast slays you
@@ -219,14 +233,18 @@ public class YoRPG
 	//loading...
 	YoRPG game = new YoRPG();
 
-	int encounters = 0;
+	while(game.playTurn()) {
+	    //	    System.out.println();
+	}
+	    
+	/*	int encounters = 0;
 
 	while( encounters < MAX_ENCOUNTERS ) {
 	    if ( !game.playTurn() )
 		break;
 	    encounters++;
 	    System.out.println();
-	}
+	    } */
 
 	System.out.println( "Thy game doth be over." );
 	/*================================================
