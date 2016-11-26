@@ -29,8 +29,8 @@ public class Ranger extends Character {
 	
     //Ranger's special attack
     public void specialize() {
-	_attack *= 1.15;
-	_defense *= 1.15;
+	_attack *= 1.10;
+	_defense *= 1.10;
     }
 
     //revert to normal mode
