@@ -81,42 +81,59 @@ public class YoRPG
 	}
 	catch ( IOException e ) { }
 
-	//instantiate the player's character
+	//until the user has confirmed his/her choice
+	boolean confirmed = false; 
 
-	s = "Choose your class! \n";
-	s += "\t1: Warrior\n";
-	s += "\t2: Mage\n";
-	s += "\t3: Rogue\n";
-	s += "\t4: Paladin\n";
-	s += "\t5: Ranger\n";
-	s += "Selection: ";
-	System.out.print(s);
+	while(!confirmed) {
 
-	try{
+	
+	    //instantiate the player's character
+
+	    s = "Choose your class! \n";
+	    s += "\t1: Warrior\n";
+	    s += "\t2: Mage\n";
+	    s += "\t3: Rogue\n";
+	    s += "\t4: Paladin\n";
+	    s += "\t5: Ranger\n";
+	    s += "Selection: ";
+	    System.out.print(s);
+
+	    try{
 		charClass = Integer.parseInt(in.readLine());
-	}
-	catch(IOException e){ }
+	    }
+	    catch(IOException e){ }
 
-	System.out.println(charClass);
-	if (charClass == 1){
+	    System.out.println(charClass);
+	    if (charClass == 1){
 		pat = new Warrior( name );
-	}
-	else if(charClass == 2){
+	    }
+	    else if(charClass == 2){
 		pat = new Mage(name);
-	}
-	else if(charClass == 3){
+	    }
+	    else if(charClass == 3){
 		pat = new Rogue(name);
-	}
-	else if(charClass == 4){
+	    }
+	    else if(charClass == 4){
 		pat = new Paladin(name);
-	}
-	else if(charClass == 5){
+	    }
+	    else if(charClass == 5){
 		pat = new Ranger(name);
-	}
-	else{
+	    }
+	    else{
 		pat = new Warrior(name);
-	}
+	    }
 
+	    System.out.println("\n==========================================");
+	    System.out.println(pat.about());
+	    System.out.println("==========================================");
+	    System.out.println("\nAre you satisfied with this choice? (yes/no)");
+	    try {
+		String yesNo = in.readLine();
+		confirmed = yesNo.equalsIgnoreCase("Yes");
+	    }
+	    catch (IOException e) {}
+	    
+	}
     }//end newGame()
 
 
